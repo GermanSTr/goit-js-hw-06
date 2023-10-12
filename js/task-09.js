@@ -1,10 +1,3 @@
-// const widGetP = document.querySelector(".widget p");
-// const widGetSpan = document.querySelector(".widget span");
-// const widGetButton = document.querySelector(".widget button");
-// const elementsColor = [widGetP, widGetSpan, widGetButton];
-// const changeColor = document.querySelector(".change-color");
-// const colorName = document.querySelector(".color");
-
 const widGet = document.querySelector(".widget");
 const changeColor = document.querySelector(".change-color");
 const colorName = document.querySelector(".color");
