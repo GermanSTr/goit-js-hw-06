@@ -1,7 +1,11 @@
-const widGetP = document.querySelector(".widget p");
-const widGetSpan = document.querySelector(".widget span");
-const widGetButton = document.querySelector(".widget button");
-const elementsColor = [widGetP, widGetSpan, widGetButton];
+// const widGetP = document.querySelector(".widget p");
+// const widGetSpan = document.querySelector(".widget span");
+// const widGetButton = document.querySelector(".widget button");
+// const elementsColor = [widGetP, widGetSpan, widGetButton];
+// const changeColor = document.querySelector(".change-color");
+// const colorName = document.querySelector(".color");
+
+const widGet = document.querySelector(".widget");
 const changeColor = document.querySelector(".change-color");
 const colorName = document.querySelector(".color");
 
@@ -9,9 +13,8 @@ changeColor.addEventListener("click", colorElement);
 
 function colorElement() {
   const result = getRandomHexColor();
-  elementsColor.forEach((element) => {
-    element.style.backgroundColor = result;
-  });
+  const colorBody = widGet.parentNode;
+  colorBody.style.backgroundColor = result;
   colorName.textContent = result;
 }
 

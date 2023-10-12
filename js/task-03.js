@@ -22,4 +22,3 @@ const markup = images
   .join("");
 
 root.insertAdjacentHTML("afterbegin", markup);
-console.log(root);

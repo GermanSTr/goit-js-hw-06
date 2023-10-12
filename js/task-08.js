@@ -4,7 +4,6 @@ formClient.addEventListener("submit", correctForm);
 
 function correctForm(element) {
   element.preventDefault();
-  //   const form = element.target;
   const emailForm = element.target.elements.email.value;
   const passwordForm = element.target.elements.password.value;
   if (emailForm === "" || passwordForm === "") {
@@ -13,7 +12,7 @@ function correctForm(element) {
     const result = {};
     result.email = emailForm;
     result.password = passwordForm;
-    console.log(result);
+    console.log(`Login: ${emailForm}, Password: ${passwordForm}`);
+    element.target.reset();
   }
-  element.target.reset();
 }
